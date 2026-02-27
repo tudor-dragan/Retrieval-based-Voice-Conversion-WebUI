@@ -22,6 +22,7 @@ import fairseq
 import numpy as np
 import soundfile as sf
 import torch
+torch.serialization.add_safe_globals([fairseq.data.dictionary.Dictionary])
 import torch.nn.functional as F
 
 if "privateuseone" not in device:
